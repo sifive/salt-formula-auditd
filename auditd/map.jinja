@@ -7,7 +7,7 @@
     'RedHat': {
         'pkgs': ['audit'],
         'enabled': false,
-        'name': 'audit',
+        'name': 'auditd',
     }
 }, grain='os_family', merge=salt['pillar.get']('auditd:service')) %}
 
