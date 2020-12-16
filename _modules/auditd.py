@@ -14,7 +14,7 @@ import salt.utils
 log = logging.getLogger(__name__)
 
 def __virtual__():
-    if salt.utils.is_windows():
+    if salt.utils.platform.is_windows():
         return False
     return 'auditd'
 
